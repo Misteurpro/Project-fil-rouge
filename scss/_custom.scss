@@ -1,0 +1,39 @@
+$primary: #906427;
+$secondary: #B6AC97;
+$dark:#392C1E;
+$black:  #292222;
+$font-family-sans-serif: "Montserrat", sans-serif !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.hero-scene{
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-image: url(../content/food.png);
+        background-size: cover;
+        filter: brightness(0.3);
+    }
+
+    *{
+        //Positionner les éléments devant le ::before
+        position:relative;
+    }
+
+    .hero-scene-content{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.row{
+	--bs-gutter-x: none;
+}
