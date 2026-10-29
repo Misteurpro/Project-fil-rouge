@@ -11990,7 +11990,7 @@ textarea.form-control-lg {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../content/food.png);
+  background-image: url(../content/images/food.png);
   background-size: cover;
   filter: brightness(0.3);
 }
