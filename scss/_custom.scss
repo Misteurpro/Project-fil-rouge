@@ -37,3 +37,35 @@ $font-family-sans-serif: "Montserrat", sans-serif !default;
 .row{
 	--bs-gutter-x: none;
 }
+
+.image-card{
+    position:relative;
+    &:hover{
+        .titre-image{
+            opacity: 1;
+        }
+        img{
+            filter: brightness(0.3);
+        }
+    }
+
+    img{
+        transition: all 0.3s;
+    }
+
+    .titre-image{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+}
+
+.w-75-sz-900{
+    width: 75%;
+ @media (max-width: 900px) {
+    width: auto;
+ }
+}
