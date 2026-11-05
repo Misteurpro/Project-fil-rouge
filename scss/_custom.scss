@@ -6,7 +6,12 @@ $font-family-sans-serif: "Montserrat", sans-serif !default;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+.fill-viewport-height{
+    min-height: calc(100vh - (56px + 112px));
+}
+
 .hero-scene{
+    margin-bottom: 15px;
     position: relative;
     &::before{
         content:"";
