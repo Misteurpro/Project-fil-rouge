@@ -11984,6 +11984,12 @@ textarea.form-control-lg {
   min-height: calc(100vh - 168px);
 }
 
+.allreservations a {
+  display: block;
+  color: #292222;
+  padding: 10px;
+}
+
 .hero-scene {
   margin-bottom: 15px;
   position: relative;
